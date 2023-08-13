@@ -1,3 +1,5 @@
+import Quiz from "./Quiz";
+
 function App() {
 
   return (
