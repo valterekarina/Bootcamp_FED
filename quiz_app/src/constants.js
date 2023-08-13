@@ -1,14 +1,7 @@
 export const jsQuizz = {
     questions: [
         {
-            id:0,
-            question:
-                "______ provide a way to pass data from one component to another. Fill in the blank.",
-            type:"FIB",
-            correctAnswer:"props"
-        },
-        {
-            id:1,
+            
             question:
                 "Which of the following is used in React.js to increase performance?",
             choices:[
@@ -21,7 +14,7 @@ export const jsQuizz = {
             correctAnswer:"Virtual DOM"
         },
         {
-            id:2,
+            
             question:
                 "What is ReactJS?",
             choices:[
@@ -34,7 +27,7 @@ export const jsQuizz = {
             correctAnswer:"User Interface framework"
         },
         {
-            id:3,
+            
             question:
                 "Identify the one which is used to pass data to components from outside",
             choices:[
@@ -47,7 +40,7 @@ export const jsQuizz = {
             correctAnswer:"props"
         },
         {
-            id:4,
+            
             question:
                 "In which language is React.js written?",
             choices:[
@@ -60,7 +53,7 @@ export const jsQuizz = {
             correctAnswer:"JavaScript"
         },
         {
-            id:5,
+            
             question:
             "What is Babel?",
             choices:[
