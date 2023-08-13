@@ -21,12 +21,14 @@ body{
         margin: 0;
     }
 
-    ul{
+    tr{
         margin-top: 20px;
         margin-left: -40px;
     }
 
-    li{
+    td{
+        text-align: center;
+        vertical-align: middle;
         text-decoration: none;
         list-style: none;
         color: $foreground;
@@ -37,11 +39,16 @@ body{
         padding: 11px;
         margin-top: 15px;
         cursor: pointer;
+        width: 150px;
+    }
+    
+    td:hover{
+        background-color: #dbbade;
     }
 }
 
 .quiz-container{
-    width: 500px;
+    width: 850px;
     background: $bg;
     border-radius: 6px;
     margin-top: 100px;
@@ -59,4 +66,8 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: $disabled;
+}
+
+footer{
+    text-align: right;
 }
