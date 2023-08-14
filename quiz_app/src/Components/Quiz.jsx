@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { resultInitialState } from "./constants";
+import { resultInitialState } from "../constants";
+import "./Quiz.scss"
 
 const Quiz = ({questions}) => {
 
@@ -26,7 +27,6 @@ const Quiz = ({questions}) => {
             answer
             ?{
                 ...prev,
-                score: prev.score +5,
                 correctAnswers: prev.correctAnswers +1,
             } : {
                 ...prev,
@@ -82,15 +82,6 @@ const Quiz = ({questions}) => {
                 <p>
                     Congradulations, you answered <strong><span className="span-correct">{result.correctAnswers}</span></strong>/<span className="span-total">{questions.length}</span> questions correctly.
                 </p>
-                {/* <p>
-                    Total score: <span>{result.score}</span>
-                </p>
-                <p>
-                    Correct answers: <span>{result.correctAnswers}</span>
-                </p>
-                <p>
-                    Wrong answers: <span>{result.wrongAnswers}</span>
-                </p> */}
                 <button onClick={onTryAgain}>Play one more time</button>
                 </div>}
         </div>
