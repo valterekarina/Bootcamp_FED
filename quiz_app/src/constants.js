@@ -1,7 +1,6 @@
 export const jsQuizz = {
     questions: [
         {
-            
             question:
                 "Which of the following is used in React.js to increase performance?",
             choices:[
@@ -14,7 +13,6 @@ export const jsQuizz = {
             correctAnswer:"Virtual DOM"
         },
         {
-            
             question:
                 "What is ReactJS?",
             choices:[
@@ -27,7 +25,6 @@ export const jsQuizz = {
             correctAnswer:"User Interface framework"
         },
         {
-            
             question:
                 "Identify the one which is used to pass data to components from outside",
             choices:[
@@ -40,7 +37,6 @@ export const jsQuizz = {
             correctAnswer:"props"
         },
         {
-            
             question:
                 "In which language is React.js written?",
             choices:[
@@ -53,7 +49,6 @@ export const jsQuizz = {
             correctAnswer:"JavaScript"
         },
         {
-            
             question:
             "What is Babel?",
             choices:[
@@ -66,4 +61,10 @@ export const jsQuizz = {
             correctAnswer:"JavaScript compiler"
         }
     ]
-}
+};
+
+export const resultInitialState = {
+    score: 0,
+    correctAnswers: 0,
+    wrongAnswers: 0
+};

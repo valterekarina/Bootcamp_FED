@@ -13,7 +13,32 @@ body{
     justify-content: center;
     margin: 0 auto;
     padding: 0 30px;
-    height: 100vh;
+    height: 100vh;    
+}
+
+.quiz-container{
+    width: 850px;
+    background: $bg;
+    border-radius: 6px;
+    margin-top: 100px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+
+    .active-question-no{
+        font-size:  32px;
+        font-weight: 500;
+        color: $primary;
+    }
+    
+    .total-question{
+        font-size: 16px;
+        font-weight: 500;
+        color: $disabled;
+    }
+    
+    footer{
+        text-align: right;
+    }
 
     .h2{
         font-size: 20px;
@@ -45,29 +70,58 @@ body{
     td:hover{
         background-color: #dbbade;
     }
+
+    .selected-answer{
+        background: #dbbade;
+        border: 1px solid $accent;
+        color: $bg;
+        font-weight: 500;
+    }
+
+    .footer-btn{
+        display: flex;
+        justify-content: flex-end;   
+    }
+
+    button {
+        background: linear-gradient(to bottom right, $primary, $accent);
+        border-radius: 9px;
+        font-size: 18px;
+        color: $bg;
+        padding: 10px 42px;
+        outline: none;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+
+        &:disabled {
+            background: $bg-accent;
+            color: $disabled;
+            cursor: not-allowed;
+        }
+    }
+    
+    .span-correct {
+        font-size: 22px;
+    }
+
+    .span-total {
+        font-size: 16px;
+    }
+
+    .result {
+        text-align: center;
+
+        h3{
+            font-size: 24px;
+            letter-spacing: 1.6px;
+            text-align: center;
+        }
+        
+        p {
+        font-size: 16px;
+        font-weight: 500;
+        }
+    }
 }
 
-.quiz-container{
-    width: 850px;
-    background: $bg;
-    border-radius: 6px;
-    margin-top: 100px;
-    padding: 30px 60px;
-    box-sizing: border-box;
-}
-
-.active-question-no{
-    font-size:  32px;
-    font-weight: 500;
-    color: $primary;
-}
-
-.total-question{
-    font-size: 16px;
-    font-weight: 500;
-    color: $disabled;
-}
-
-footer{
-    text-align: right;
-}
