@@ -53,20 +53,21 @@ const Quiz = ({questions}) => {
             <>
             <h2>{question}</h2>
             <table>
-                <tr>
+                <tbody>
+                    <tr>
                         {
-                    choices.map((answer, index) => (
-                        <td 
-                        onClick={() => onAnswerClick(answer, index)}
-                        key = {answer}
-                        className={answerIdx === index ? 'selected-answer' : null}
-                        >
-                            {answer}
-
-                        </td>
-                    ))
-                }
-                </tr>
+                            choices.map((answer, index) => (
+                                <td 
+                                    onClick={() => onAnswerClick(answer, index)}
+                                    key = {answer}
+                                    className={answerIdx === index ? 'selected-answer' : null}
+                                >
+                                    {answer}
+                                </td>
+                            ))
+                        }
+                    </tr>
+                </tbody>
             </table>
             <div className="footer-btn">
                 <button onClick={onClickNext} disabled = {answerIdx === null}>
